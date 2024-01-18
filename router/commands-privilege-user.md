@@ -1,29 +1,31 @@
 # Comandos para roteadores Cisco (Utilizando acesso Admin)
 
+## "#" indica o modo em que estamos, no caso o modo Admin do equipamento
+
 ## Configure
-### Comando para entrarmos no modo de configuração do dispositivo
+### Comando para entrarmos no modo de configuração do dispositivo:
 
 ```
-configure terminal
+# configure terminal
 ```
 
 ## Reload
-### Comando para reiniciar o dispositivo
+### Comando para reiniciar o dispositivo:
 
 ```
-reload
+# reload
 ```
 
 ## Write
-### Comando para salvar as configurações
+### Comando para salvar as configurações:
 
 ```
-write
+# write
 ```
 
 ## Show
 ### Com um privilégio maior, conseguimos visualizar mais coisas.. Como as configurações que estão rodando no equipamento:
 
 ```
-show running-config
+# show running-config
 ```
