@@ -20,3 +20,10 @@ reload
 ```
 write
 ```
+
+## Show
+### Com um privilégio maior, conseguimos visualizar mais coisas.. Como as configurações que estão rodando no equipamento:
+
+```
+show running-config
+```
