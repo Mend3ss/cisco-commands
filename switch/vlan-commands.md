@@ -45,7 +45,7 @@ Switch# show vlan brief
 ## Definindo uma interface para o modo access
 
 ```
-Switch(config)# interface fast0/0
+Switch(config)# interface <interface>
 
 Switch(config-if)# switchport mode access
 ```
@@ -53,4 +53,27 @@ Switch(config-if)# switchport mode access
 
 ```
 Switch(config-if)# switchport access vlan <numero da vlan>
+```
+
+## Definindo uma interface para o modo trunk
+
+```
+Switch(config)# interface <interface>
+
+Switch(config-if)# switchport mode trunk
+```
+
+### Definindo quais VLAN estão permitidas na interface
+
+```
+Switch(config-if) switchport trunk
+```
+### Temos duas opções, allowed e native.
+
+### • allowed, permite apenas as VLANs especificadas.
+
+### • native, define uma vlan como padrão para a interface (por exemplo 10). Assim todo tráfego de VLANs 10 serão liberados.
+
+```
+Switch(config-if) switchport trunk allowed vlan <VLAN ou VLANs (10,20,30)>
 ```
